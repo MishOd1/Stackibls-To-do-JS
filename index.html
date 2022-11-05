@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+<body>
+<style></style>
+<h2> JS To-Do List </h2>
+
+<button onclick="myFunction()" title="Click On Me to Add A Task">Task 1</button><br>
+<button onclick="myFunction1()" title="Click On Me to Add A Task">Task 2</button><br>
+<button onclick="myFunction2()" title="Click On Me to Add A Task">Task 3</button><br>
+<br><br>
+ 
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<br><br>
+<button onclick="location.reload()" class="button button1" title="click to reset and add new tasks">Have You finished all the tasks?</button>
+
+<script>
+// Write Javascript code!
+function myFunction() {
+  let text;
+  let task = prompt("Please enter the task:", "buy groceries");
+  if (task == null || task == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "<em><b>1. </b></em> Make sure to " + task;
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+function myFunction1() {
+  let text;
+  let task = prompt("Please enter the task:", "buy indian food");
+  if (task == null || task == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "<em><b>2. </b></em> Make sure to " + task;
+  }
+  document.getElementById("demo2").innerHTML = text;
+}
+function myFunction2() {
+  let text;
+  let task = prompt("Please enter the task:", "buy juice");
+  if (task == null || task == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "<em><b>3. </b></em> Make sure to " + task;
+  }
+  document.getElementById("demo3").innerHTML = text;
+}</script>
+
+</body>
+</html>
